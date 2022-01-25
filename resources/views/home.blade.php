@@ -41,5 +41,5 @@
 @endsection
 
 @section('page-script')
-    <script src="{{ asset('assets/js/chat.js') }}" charset="utf-8"></script>
+    <script src="{{ secure_asset('assets/js/chat.js') }}" charset="utf-8"></script>
 @stop

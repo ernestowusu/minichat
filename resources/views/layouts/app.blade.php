@@ -13,9 +13,9 @@
     <title>Mini Chat</title>
 
     <!-- Styles -->
-    <link href="{{ asset('assets/css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/css/font-awesome.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/css/AdminLTE.min.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('assets/css/app.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('assets/css/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('assets/css/AdminLTE.min.css') }}" rel="stylesheet">
     <style type="text/css">
         
         .navbar-default {
@@ -25,7 +25,7 @@
     </style>
     @yield('page-style')
 </head>
-<body class="hold-transition skin-blue layout-top-nav" style=" background-image: url('{{asset('assets/images/back.jpg')}}'); background-repeat: no-repeat;
+<body class="hold-transition skin-blue layout-top-nav" style=" background-image: url('{{secure_asset('assets/images/back.jpg')}}'); background-repeat: no-repeat;
   background-size: cover;">
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
@@ -84,11 +84,11 @@
 
         @yield('content')
     </div>
-    <script src="{{ asset('assets/js/jquery-2.2.3.min.js') }}"></script>
-    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('assets/js/vue.js') }}"></script>
-    <script src="{{ asset('assets/js/socket.io.js') }}"></script>
-    <script src="{{ asset('assets/js/moment.min.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/jquery-2.2.3.min.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/bootstrap.min.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/vue.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/socket.io.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/moment.min.js') }}"></script>
     @yield('page-script')
 </body>
 </html>

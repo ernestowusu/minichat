@@ -6,12 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Mini Chat</title>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
-        <link href="{{ asset('assets/css/app.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/css/font-awesome.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/css/AdminLTE.min.css') }}" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="{{asset('assets/css/styles.css')}}">
+        <link href="{{ secure_asset('assets/css/app.css') }}" rel="stylesheet">
+        <link href="{{ secure_asset('assets/css/font-awesome.min.css') }}" rel="stylesheet">
+        <link href="{{ secure_asset('assets/css/AdminLTE.min.css') }}" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{secure_asset('assets/css/styles.css')}}">
     </head>
-    <body class="hold-transition skin-blue layout-top-nav" style=" background-image: url('{{asset('assets/images/back.jpg')}}'); background-repeat: no-repeat;
+    <body class="hold-transition skin-blue layout-top-nav" style=" background-image: url('{{secure_asset('assets/images/back.jpg')}}'); background-repeat: no-repeat;
   background-size: cover;">
 <div class="container-fluid">
   <div class="login-box">
