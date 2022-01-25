@@ -11,10 +11,15 @@ class MainController extends Controller
 {
 
      public function index(){
+         if(!Auth::check()){
+            return redirect('/');
+        }
         return view('home');
      }
     public function welcome(){
-        Auth::logout();
+        if(Auth::check()){
+            return redirect('/home');
+        }
         return view('welcome');
     }
 
