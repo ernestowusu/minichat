@@ -141,6 +141,9 @@ var chatbox = {
                 if (this.message.length > 0) {
                     let messagePacket = this.createMsgObj('text', '', this.message);
                     this.socket.emit('addMessage', messagePacket);
+                    console.log(messagePacket)
+                    console.log(this)
+                    console.log(this.messages)
                     this.messages.push(messagePacket);
                     this.message = "";
                     this.scrollToBottom();
