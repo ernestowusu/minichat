@@ -19,7 +19,7 @@
    
   </div>
   <div class="login-box-body">
-      <h3 style="text-align:center">Real Chat App</h3>
+      <h3 style="text-align:center">{{env('APP_NAME')}}</h3>
     <p class="login-box-msg">Sign in to start your session</p>
     <a href="{{ url('/login') }}" class="btn btn-success btn-block btn-lg">Login</a>
     <a href="{{ url('/login') }}" class="btn btn-primary btn-block btn-lg">Register</a>

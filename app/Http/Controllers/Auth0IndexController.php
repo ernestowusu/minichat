@@ -37,15 +37,6 @@ class Auth0IndexController extends Controller
     {
         Auth::logout();
         return redirect('/');
-
-        // $logoutUrl = sprintf(
-        //     'https://%s/v2/logout?client_id=%s&returnTo=%s',
-        //     config('laravel-auth0.domain'),
-        //     config('laravel-auth0.client_id'),
-        //     config('app.url')
-        // );
-
-        // return Redirect::intended($logoutUrl);
     }
 
     /**
