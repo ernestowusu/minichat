@@ -14,9 +14,7 @@ class MainController extends Controller
         return view('home');
      }
     public function welcome(){
-        if(Auth::check()){
-            return redirect('/home');
-        }
+        Auth::logout();
         return view('welcome');
     }
 
