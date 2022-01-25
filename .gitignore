@@ -10,7 +10,7 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.
-/nodejs/node_modules
+/socket/node_modules
 /storage/*.key
 /vendor
 /.idea
