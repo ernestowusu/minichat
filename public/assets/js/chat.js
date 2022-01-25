@@ -74,6 +74,7 @@ socket.on('connect_error', function(){
     app.chatLists = [];
 });
 socket.on('chatListRes', function(data){
+     console.log(data)
     if (data.userDisconnected) {
         app.chatLists.findIndex(function(el) {
             if(el.socket_id == data.socket_id){
@@ -97,6 +98,7 @@ socket.on('chatListRes', function(data){
 });
 // user chat box not open, count incomming  messages
 socket.on('addMessageResponse', function(data){
+    console.log(data)
     if(!app.chatBox.includes(data.fromUserId)){
         console.log(app.chatLists);
         try{
