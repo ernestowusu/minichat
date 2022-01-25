@@ -18,7 +18,7 @@ Generate laravel application key
 php artisan key:generate
 ```
 
-Enter nodejs folder
+Enter socket folder
 
 install node dependencies
 
