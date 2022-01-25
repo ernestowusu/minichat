@@ -191,6 +191,7 @@ var chatbox = {
             }
         },
         getMessagesResponse: function(data){
+            console.log(data)
             if (data.toUserId == this.cChat.id) {
                 this.messages = data.result;
                 this.$nextTick(function () {
