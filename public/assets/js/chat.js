@@ -47,7 +47,7 @@ var app = new Vue({
             this.calcChatBoxStyle();
         },
         chatBoxMinimize: function(eleId){
-        	$("#chatbox-"+eleId+" .box-body, #chatbox-"+eleId+" .box-footer").slideToggle('slow');
+            $("#chatbox-"+eleId+" .box-body, #chatbox-"+eleId+" .box-footer").slideToggle('slow');
         },
         calcChatBoxStyle(){
             var i = 270; // start position
@@ -98,11 +98,16 @@ socket.on('chatListRes', function(data){
 // user chat box not open, count incomming  messages
 socket.on('addMessageResponse', function(data){
     if(!app.chatBox.includes(data.fromUserId)){
+        console.log(app.chatLists);
+        try{
         app.chatLists.findIndex(function(el) {
             if(el.id == data.fromUserId){
                 el.msgCount += 1;
             }
         });
+      }catch (error) {
+            console.log(error);
+      }
     }
 });
 
