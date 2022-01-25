@@ -90,10 +90,10 @@ socket.on('chatListRes', function(data){
             }
         });
     }else {
-        data.chatList.findIndex(function(el) {
+        data.chatList.rows.findIndex(function(el) {
             el.msgCount = 0;
         });
-        app.chatLists = data.chatList;
+        app.chatLists = data.chatList.rows;
     }
 });
 // user chat box not open, count incomming  messages

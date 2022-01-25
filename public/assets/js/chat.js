@@ -74,7 +74,7 @@ socket.on('connect_error', function(){
     app.chatLists = [];
 });
 socket.on('chatListRes', function(data){
-     console.log(data)
+    console.log(data)
     if (data.userDisconnected) {
         app.chatLists.findIndex(function(el) {
             if(el.socket_id == data.socket_id){
@@ -90,10 +90,10 @@ socket.on('chatListRes', function(data){
             }
         });
     }else {
-        data.chatList.findIndex(function(el) {
+        data.chatList.rows.findIndex(function(el) {
             el.msgCount = 0;
         });
-        app.chatLists = data.chatList;
+        app.chatLists = data.chatList.rows;
     }
 });
 // user chat box not open, count incomming  messages
